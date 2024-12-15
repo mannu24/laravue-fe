@@ -1,17 +1,39 @@
 {
-  "name": "nuxt-app",
+  "name": "canvas-template",
+  "author": "HugoRCD",
+  "version": "1.1.0",
   "private": true,
-  "type": "module",
+  "license": "Apache-2.0",
   "scripts": {
+    "automd": "automd",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
-  "dependencies": {
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.18",
+    "@nuxt/content": "^2.13.4",
+    "@nuxt/devtools": "^1.6.3",
+    "@nuxt/eslint-config": "^0.7.2",
+    "@nuxt/fonts": "^0.10.3",
+    "@nuxt/image": "1.8.1",
+    "@nuxt/ui": "^2.20.0",
+    "@nuxthq/studio": "^2.2.1",
+    "@nuxtjs/i18n": "next",
+    "@vueuse/core": "^11.3.0",
+    "@vueuse/nuxt": "^11.3.0",
+    "automd": "^0.3.12",
+    "eslint": "^9.16.0",
     "nuxt": "^3.14.1592",
-    "vue": "latest",
-    "vue-router": "latest"
+    "nuxt-og-image": "^3.1.1",
+    "nuxt-svgo": "^4.0.9",
+    "resend": "^4.0.1",
+    "sitemap": "^8.0.0",
+    "vue-sonner": "^1.3.0"
   }
 }
